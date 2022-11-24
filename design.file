@@ -1,0 +1,33 @@
+Director
+    
+    Attr:
+        _Terminal_service: instance.
+        _Graphic: instance.
+        _word: instance.
+        _is_playing: true.
+    Method: Start_game()
+        while
+        _get_inputs()
+        _do_outpust()
+        _do_update()
+        
+Terminal_Service (inputs and ouputs)
+    method: Read_text()
+        write_text()
+Graphic (parachute graphic)
+    attr: _parachute = []
+          _lives = 6
+    
+    methods= print_parachute()
+                 decrease_lives()
+Word  (list of words)
+          attr:
+                _listOfWords=['Argentina','worldCup','Champion']
+        _wordToGuess = ''
+        randome_Word = ''
+    methods:
+        wordToUnderscore()   
+        findLetter()
+        replaceUnderscoreForLetter()
+                      
+            
